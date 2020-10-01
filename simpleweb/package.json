@@ -1,0 +1,14 @@
+{
+  "name": "simpleweb",
+  "main": "index.js",
+  "version": "0.0.1",
+  "description": "A simple web app",
+  "repository": {},
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "*"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
