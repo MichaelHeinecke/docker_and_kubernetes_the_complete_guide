@@ -1,12 +1,6 @@
 FROM node:alpine
-
-WORKDIR /app
-
-# copy from path on local machine relative to build context
-# to path in container
-COPY package.json .
-RUN npm config set registry http://registry.npmjs.org/
+WORKDIR "/app"
+COPY ./package.json ./
 RUN npm install
 COPY . .
-
 CMD ["npm", "run", "start"]
